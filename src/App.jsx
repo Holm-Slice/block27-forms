@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Authenticate from './components/Authenticate'; 
-import SignUpForm from './components/signupform';
+import SignupForm from './components/SignupForm';
 import './App.css';
 
 // const API_URL = "https://fsa-jwt-practice.herokuapp.com/authenticate"
@@ -13,7 +13,7 @@ function App() {
     <>
     {/* this is mounting the components inside the jsx app() */}
 
-    < SignUpForm token={token} setToken={setToken}/>
+    < SignupForm token={token} setToken={setToken}/>
     
     < Authenticate token={token} setToken={setToken}/>
 

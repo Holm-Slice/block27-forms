@@ -29,7 +29,7 @@ async function handleClick(){
 
     return (
     <div>
-        <h2>Authentication before elemination!</h2>
+        <h2>Authentication necessary!</h2>
         {successMessage && <p>{successMessage}</p>}
         {error && <p>{error}</p>}
         <button onClick={handleClick}> Authenticate That MF!</button>
