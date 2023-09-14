@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const API_URL = "https://fsa-jwt-practice.herokuapp.com/signup"
+// const API_URL = "https://fsa-jwt-practice.herokuapp.com/authenticate"
 
 
 
@@ -14,7 +14,7 @@ async function handleSubmit(event,token) {
     event.preventDefault();
 
     try {
-      const response = await fetch(API_URL, { 
+      const response = await fetch('https://fsa-jwt-practice.herokuapp.com/signup', { 
                 method: "POST", 
                 headers: { 
                   "Content-Type": "application/json" 

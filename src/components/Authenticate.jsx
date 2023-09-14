@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_URL = "https://fsa-jwt-practice.herokuapp.com/signup"
+// const API_URL = "https://fsa-jwt-practice.herokuapp.com/authenticate"
 
 export default function Authenticate({token}){
 const [successMessage, setSuccessMessage] = useState(null);
@@ -10,7 +10,7 @@ console.log("working?");
 
 async function handleClick(){
     try {
-        const response = await fetch(API_URL,
+        const response = await fetch('https://fsa-jwt-practice.herokuapp.com/authenticate',
         {
         method: "GET",
         headers: {

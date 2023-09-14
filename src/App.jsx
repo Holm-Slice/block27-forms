@@ -3,7 +3,7 @@ import Authenticate from './components/Authenticate';
 import SignUpForm from './components/signupform';
 import './App.css';
 
-const API_URL = "https://fsa-jwt-practice.herokuapp.com/signup"
+// const API_URL = "https://fsa-jwt-practice.herokuapp.com/authenticate"
 
 function App() {
   // const [count, setCount] = useState(0)
