@@ -13,7 +13,7 @@ const [error, setError] = useState(null);
 
 async function handleSubmit(event,token) {
     event.preventDefault();
-     if (userName.length < 8) {
+     if (username.length < 8) {
      <h2>Your username must be at least 8 characters</h2>
     }
 
