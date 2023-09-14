@@ -20,34 +20,16 @@ async function handleSubmit(event,token) {
                   "Content-Type": "application/json" 
                 }, 
                 body: JSON.stringify({ 
-                  username: {username}, 
-                  password: {password} 
-                })
-              })
+                  username: username, 
+                  password: password 
+                }),
+              });
       const result = await response.json();
       setToken(result.token)
       console.log(result);
     } catch (error) {
       
     }}
-  
-//     try {
-//        const response = await fetch('https://fsa-jwt-practice.herokuapp.com/signup', 
-//               { 
-//                 method: "POST", 
-//                 headers: { 
-//                   "Content-Type": "application/json" 
-//                 }, 
-//                 body: JSON.stringify({ 
-//                   username: {username}, 
-//                   password: {password} 
-//                 })
-//               })
-//               const result = await response.json();
-//     } catch (error) {
-//       console.log(error);
-//     }
-// }
 
     return(
         <>
@@ -57,16 +39,17 @@ async function handleSubmit(event,token) {
   <form onSubmit={handleSubmit}>
 
   <label>
-    Username:{""}
-     <input value={username}
+    Username:{" "}
+     <input className="user-input" value={username}
             onChange={(e) => setUsername(e.target.value)}/>
     <br />
   </label>
 {/* </div> */}
 {/* <div className="pw-input"> */}
   <label>
-    Password:{""}  
-    <input 
+    Password:{" "}  
+    <input
+    className="pw-input" 
     type="password" 
     value={password}
     onChange={(e) => setPassword(e.target.value)}/>

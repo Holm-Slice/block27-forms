@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #343434;
 }
 
 .logo {
@@ -41,7 +42,8 @@
   color: #888;
 }
 
-.user-inputs, .pw-input{
-  padding: 10px;
+.user-input, .pw-input{
+  padding: 8px;
+  margin: 10px;
   
 }

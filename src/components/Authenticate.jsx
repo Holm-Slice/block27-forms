@@ -6,7 +6,7 @@ export default function Authenticate({token}){
 const [successMessage, setSuccessMessage] = useState(null);
 const [error, setError] = useState(null);
 
-console.log("Token", token);
+console.log("working?");
 
 async function handleClick(){
     try {
@@ -21,15 +21,15 @@ async function handleClick(){
     const result = await response.json();
     console.log("Authenticate Result: ", result);
     const username = result.data.username;
-    setSuccessMessage(`${result.message} Welcom ${username}`);
-    } catch (error) {
+    setSuccessMessage(`${result.message} Welcome ${username}`);
+    } catch (error){ 
     setError(error.message);
     }
 }
 
     return (
     <div>
-        <h2>Authentication Required!</h2>
+        <h2>Authentication before elemination!</h2>
         {successMessage && <p>{successMessage}</p>}
         {error && <p>{error}</p>}
         <button onClick={handleClick}> Authenticate That MF!</button>
